@@ -23,7 +23,7 @@ app.get('/',(req,res)=>{
 })
 
 app.post('/',(req,res)=>{
-    console.log(req.body.url);
+    down(req.body.url)
 })
 
 app.listen(port,()=>{
