@@ -10,4 +10,14 @@ down.addEventListener('submit',(e)=>{
     const vidId = url.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop()
     img.src = "//img.youtube.com/vi/"+vidId+"/0.jpg"
     console.log(vidId)
+
+    fetch('/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            url: search.value
+        })
+    });
 })
