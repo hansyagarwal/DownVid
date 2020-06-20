@@ -9,6 +9,5 @@ down.addEventListener('submit',(e)=>{
     const url = search.value;
     const vidId = url.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop()
     img.src = "//img.youtube.com/vi/"+vidId+"/0.jpg"
-
     console.log(vidId)
 })
