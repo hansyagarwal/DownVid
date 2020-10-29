@@ -29,3 +29,7 @@ app.post('/',(req,res)=>{
 app.listen(port,()=>{
     console.log("Server running on port: " + port)
 })
+
+app.post('/dem',(req,res)=>{
+    res.send("hello")
+})
